@@ -9,7 +9,7 @@
   <h1>Available healpy data files</h1>
   <ul>
     {% for url in site.static_files %}
-      {% if chart.extname == '.fits' %}
+      {% if url.extname == '.fits' %}
         <li><a href="{{ site.baseurl | escape }}{{ url.path | escape }}">{{ url.path | escape }}</a> </li>
       {% endif %} 
     {% endfor %}
